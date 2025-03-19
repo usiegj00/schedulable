@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Declare your gem's dependencies in schedulable.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -13,11 +14,11 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
-gem 'ice_cube', git: 'git://github.com/joelmeyerhamme/ice_cube.git', branch: 'master'
+gem 'ice_cube'
 gem 'simple_form'
 gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
 gem "date_picker", github: 'benignware/date_picker'
 gem 'database_cleaner'
 gem 'sqlite3'
 gem 'factory_girl_rails', "~> 4.0"
-gem 'turbolinks', :git => 'git://github.com/rails/turbolinks.git'
+gem 'turbolinks', github: 'rails/turbolinks'
