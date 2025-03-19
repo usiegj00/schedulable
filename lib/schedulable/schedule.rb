@@ -3,7 +3,7 @@ module Schedulable
     class Schedule  < ActiveRecord::Base
 
       serialize :day
-      serialize :day_of_week, Hash
+      serialize :day_of_week, type: Hash
 
       belongs_to :schedulable, polymorphic: true
 
